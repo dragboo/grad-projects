@@ -22,7 +22,7 @@ class WordCounter(HTMLParser):
         self.skipTag = False                                              # intializing a flag to skip certain html tags
 
     def handle_data(self, data):
-        if self.skipTag:                                                  # if skipTag is true then skips processing the text
+        if self.skipTag:                                                  # if skipTag is true then skip processing the text
             return
         words = re.findall(r'\b\w+\b', data)                              # extracting words from the webpage 
         for word in words:
@@ -44,7 +44,7 @@ class WordCounter(HTMLParser):
 
 def crawlUrl(url):
     '''
-    analyzes webpages for information 
+    Analyzes webpages for information 
     '''
     if len(visitedUrl) >= visitLimit:                            # checking if we have reached the maximum limit of webpages
         return

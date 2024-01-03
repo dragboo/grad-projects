@@ -4,9 +4,9 @@ This Python program aims to scrape the DePaul University College of Computing an
 
 Libraries Used:
 
-urllib.request: For opening and reading URLs.
-urllib.parse: For joining and parsing URLs.
-html.parser: For HTML parsing.
+urllib.request: For opening and reading URLs. <br />
+urllib.parse: For joining and parsing URLs. <br />
+html.parser: For HTML parsing. <br />
 re: For regular expressions.
 
 Please note that web scraping should be performed responsibly and in accordance with the website's terms of service.
